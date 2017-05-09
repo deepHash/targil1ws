@@ -1,0 +1,23 @@
+{
+  "name": "targil1",
+  "version": "1.0.0",
+  "description": "vod management - devices payments side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepHash/targil1ws.git"
+  },
+  "author": "Igal Tsesis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepHash/targil1ws/issues"
+  },
+  "homepage": "https://github.com/deepHash/targil1ws#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}

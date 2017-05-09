@@ -1,0 +1,42 @@
+{
+    "Devices": [
+        {
+            "name": "Yes Max",
+            "price": 99
+        },
+        {
+            "name": "Hot Box",
+            "price": 49
+        },
+        {
+            "name": "Netflix",
+            "price": 10
+        }
+    ],
+    "Customers": [
+        {
+            "id": 1,
+            "name": "Cohen Family",
+            "numOfVods": 4,
+            "discount": 10
+        },
+        {
+            "id": 2,
+            "name": "Israeli Family",
+            "numOfVods": 3,
+            "discount": 15   
+        },
+        {
+            "id": 3,
+            "name": "Levy Family",
+            "numOfVods": 5,
+            "discount": 20
+        },
+        {
+            "id": 4,
+            "name": "Dan Family",
+            "numOfVods": 10,
+            "discount": 50
+        }
+    ]
+}
