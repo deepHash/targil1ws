@@ -31,7 +31,6 @@ app.put('/getTypeByPrice/:min_price/:max_price', (req,res) => {
 
 //routs for all images:
 app.get('/get.jpg', (req,res) => {
-    console.log(`${__dirname}/includes/get.jpg`);
     res.sendFile(`${__dirname}/includes/get.jpg`);
 });
 
