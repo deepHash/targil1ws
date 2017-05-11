@@ -1,5 +1,5 @@
 {
-  "name": "targil1",
+  "name": "targil1ws",
   "version": "1.0.0",
   "description": "vod management - devices payments side",
   "main": "index.js",
@@ -18,7 +18,6 @@
   "homepage": "https://github.com/deepHash/targil1ws#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "json-query": "^2.2.2"
+    "express": "^4.15.2"
   }
 }

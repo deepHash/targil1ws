@@ -6,22 +6,20 @@ const express = require ('express'),
       data = vod();
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended:true}));
+app.use(bodyParser.urlencoded({extended:true}));
 
 app.get('/', (req,res) => {
     //send API
     res.send(`<!doctype><html>
             <head><title></title></head>
             <body>          
-            <h1>API</h1>
+            <h1>Welcome to Device Payments - API</h1>
+            <p><h3>Get All Payments:</h3>
+            <br>Show how much every client pays, depends on his device and
+            number of devices
             </body>
             </html>`);
 });
-
-// app.all('*', (req, res, next) => {
-//     res.send(`global handler`);
-//     next();
-// });
 
 app.get('/getAllPayments/', (req,res) => {
     res.status(200).json(data.getAllPayments());
@@ -29,6 +27,15 @@ app.get('/getAllPayments/', (req,res) => {
 
 app.post('/getUserData/', (req,res) => {
     res.status(200).json(data.getUserData(req.body.id));
+});
+
+app.put('/getTypeByPrice/:min_price/:max_price', (req,res) => {
+    res.status(200).json(data.getTypeByPrice(
+                                req.params.min_price,req.params.max_price));
+});
+
+app.all('*', (req, res) => {
+    res.send(`error: route not found, global handler`);
 });
 
 
