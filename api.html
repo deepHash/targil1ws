@@ -1,0 +1,35 @@
+<!doctype>
+<html>
+    <head><title>VOD Device Payments API</title></head>
+    <body>          
+        <h1>Welcome Stranger to Device Payments - API</h1>
+        <p style="border: 3px solid">
+            <h3>Get All Payments:</h3>
+            <br>This is a GET route. Show how much every client pays, 
+            depends on his device and number of devices.<br>
+            <a href="https://targil1vod.herokuapp.com/getAllPayments">
+                https://targil1vod.herokuapp.com/getAllPayments
+            </a>
+        </p>
+        <p style="border: 2px dashed">
+            <h3>Get User Data:</h3>
+            <br>This is a POST route. 
+            Return all the data regarding a customer by id.<br>
+            key: id<br>
+            values: 1, 2, ...<br>
+            <a href="https://targil1vod.herokuapp.com/getUserData">
+                https://targil1vod.herokuapp.com/getUserData
+            </a>
+        </p>
+        <p style="border: 2px dashed">
+            <h3>Get Type By Price:</h3>
+            <br>This is a PUT route.
+            Returns all the Devices that cost between the two parameters that
+            are given, keys are - min_price and max_price, for example:
+            /getTypeByPrice/40/100<br>
+            <a href="https://targil1vod.herokuapp.com/getTypeByPrice">
+                https://targil1vod.herokuapp.com/getTypeByPrice
+            </a>
+        </p>
+    </body>
+</html>

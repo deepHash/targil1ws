@@ -10,15 +10,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.get('/', (req,res) => {
     //send API
-    res.send(`<!doctype><html>
-            <head><title></title></head>
-            <body>          
-            <h1>Welcome to Device Payments - API</h1>
-            <p><h3>Get All Payments:</h3>
-            <br>Show how much every client pays, depends on his device and
-            number of devices
-            </body>
-            </html>`);
+    res.sendFile(`${__dirname}/api.html`);
 });
 
 app.get('/getAllPayments/', (req,res) => {
