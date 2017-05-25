@@ -22,7 +22,7 @@ app.get('/getAllPayments/', (req,res) => {
 app.post('/getUserData/', (req,res) => {
     res.status(200).json(data.getUserData(req.body.id));
 });
-//put route
+//put routed
 app.put('/getTypeByPrice/:min_price/:max_price', (req,res) => {
     res.status(200).json(data.getTypeByPrice(
                                 req.params.min_price,req.params.max_price));
